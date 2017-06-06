@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Ben Tupper</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+		.demo-content{
+			padding: 15px;
+			font-size: 18px;
+			min-height: 300px;
+			background: #dbdfe5;
+			margin-bottom: 10px;
+		}
+		.demo-content.bg-alt{
+			background: #abb1b8;
+		}
+	</style>
+</head>
+
+<!-- <body class="body">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 red">text</div>
+			<div class="col-sm-6 blue">text</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-8 red">text</div>
+			<div class="col-sm-4 blue">text</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-9 red">text</div>
+			<div class="col-sm-3 blue">text</div>
+		</div>
+	</div>
+
+
+	<div class=""
+
+	<script src="js/bootstrap.min.js"></script>
+	<footer>
+	</footer>	
+</body> -->
+
+<!-- <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="demo-content">.col-md-4</div>
+			</div>
+			<div class="col-md-4">
+				<div class="demo-content bg-alt">
+				.col-md-4</div>
+			</div>
+			<div class="col-md-4">
+				<div class="demo-content">
+				.col-md-4</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row well">
+			<div class="col-md-2">
+				<div class="demo-content">col-md-2
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="demo-content bg-alt">col-md-8
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="demo-content">col-md-2
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="demo-content">col-md-3
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="demo-content bg-alt">col-md-3
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="demo-content">col-md-3
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="demo-content">col-md-3
+				</div>
+			</div>
+		</div>
+	</div>
+</body> -->
+
+<body class="body">
+	<div class="container-fluid" style="min-height: 95%;">
+			<div class="row">
+				<div class="col-md-2">
+					<br>
+					<center>
+					<img src="{% static 'personal/img/klein.png' %}" class= "responsive-image" style="max-height: 100px;" alt="klein">
+					</center>
+				</div>
+				<div class="col-md-10">
+					<br>
+					<center>
+						<h3>One ring to rule them all</h3>
+					</center>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<br>
+				<div class="col-md-2">
+					<div class="well bs-sidebar affix" id="sidebar">
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active"><a href="#">Frodo</a></li>
+							<li><a href="#">Meriodoc</a></li>
+							<li class="disabled"><a href="#">Perrigrin</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="container-fluid">
+						{% block content %}
+						{% endblock %}
+					</div>
+
+				</div>
+			</div>
+	</div>
+</body>
+
+</html>

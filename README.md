@@ -1,0 +1,3 @@
+This is my first attempt at using django and bootstrap. It seems like django is good as a go-between for python and html/css/js, and it seems like django is mostly good for formating responsive webpages.
+
+I'm mostly learning how the directories are laid out when using django. This page uses the 12 columns per the bootstrap default. It also uses {% %} notation for importing block content, snippets, and css.
